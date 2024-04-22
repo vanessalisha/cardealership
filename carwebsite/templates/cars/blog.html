@@ -1,0 +1,1334 @@
+{% extends 'cars/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog- Cars</title>
+</head>
+<style>
+.start{
+  margin:150px;
+}
+.start p{
+  font-size:13px;
+  border-bottom:1px solid rgb(210, 204, 204);
+  padding:9px;
+}
+/* first car tesla starts*/
+.tes{
+  padding-top:35px;
+}
+.tes img{
+  width:790px;
+  margin-left: 160px;
+}
+.tes h1{
+  margin-top:-70px;
+  font-size: 27px;
+  color:white;
+  margin-left: 180px;
+}
+.po1{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po1 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po1 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po1 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com1 img{
+  width:22px;
+  height:29px;
+  margin-left:267px;
+}
+.com1 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:297px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/* tesla car ends*/
+
+/* hyundai car starts*/
+.hyun{
+  padding-top:27px;
+}
+.hyun img{
+  width:790px;
+  margin-left: 160px;
+}
+.hyun h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po2{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po2 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po2 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po2 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com2 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com2 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/* hyun ends*/
+
+/* foto starts*/
+.foto{
+  padding-top:27px;
+}
+.foto img{
+  width:790px;
+  margin-left: 160px;
+}
+.foto h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po3{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po3 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po3 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po3 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com3 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com3 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/*foto ends*/
+
+/* ford starts*/
+.ford{
+  padding-top:27px;
+}
+.ford img{
+  width:790px;
+  margin-left: 160px;
+}
+.ford h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po4{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po4 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po4 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po4 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com4 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com4 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/*ford ends*/
+
+/* first parallax starts*/
+.paral{
+  padding-top:27px;
+}
+.paral img{
+  width:790px;
+  margin-left: 160px;
+}
+.paral h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po5{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po5 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po5 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po5 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com5 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com5 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/* first parallax ends*/
+
+/*tesla 2 starts*/
+.tes2{
+  padding-top:27px;
+}
+.tes2 img{
+  width:790px;
+  margin-left: 160px;
+}
+.tes2 h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po6{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po6 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po6 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po6 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com6 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com6 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/*tesla 2 ends*/
+
+/*aston starts*/
+.ast{
+  padding-top:27px;
+}
+.ast img{
+  width:790px;
+  margin-left: 160px;
+}
+.ast h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po7{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po7 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po7 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po7 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com7 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com7 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/* aston ends */
+
+/*sharp tool starts*/
+.sharp{
+  padding-top:27px;
+}
+.sharp img{
+  width:790px;
+  margin-left: 160px;
+}
+.sharp h1{
+  margin-top:-70px;
+  font-size:25px;
+  color:white;
+  margin-left: 180px;
+}
+.po8{
+  display: flex;
+  margin-top:37px;
+  margin-left: 160px;
+  width:790px;
+  padding:7px;
+  background-color: #232628;
+}
+.po8 img{
+  width:22px;
+  height:29px;
+  padding-top:5px;
+  margin-left: 30px;
+}
+.po8 h4{
+  font-size:12px;
+  color:white;
+  font-weight: 400;
+  margin-left:10px;
+  padding-top:9px;
+  font-family:"montserrat", Arial;
+}
+.po8 h5{
+  font-size:12px;
+  font-weight: 400;
+  color:white;
+  padding-top:9px;
+  margin-left:10px;
+  font-family:"montserrat", Arial;
+}
+.com8 img{
+  width:22px;
+  height:29px;
+  margin-left:299px;
+}
+.com8 h6{
+  margin-top:-30px;
+  color: white;
+  margin-left:330px;
+  padding-top:9px;
+  font-weight:400;
+  font-size: 12px;
+}
+/* sharp tool ends*/
+.te{
+float: right;
+margin-right:277px;
+margin-top:-3799px;
+border-bottom:1px solid rgb(210, 204, 204);
+}
+.te h2{
+  font-size:17px;
+}
+.te h3{
+  font-size: 12px;
+  color:grey;
+}
+.te p{
+  font-size:14px;
+}
+/*media gallery starts*/
+.me{
+float: right;
+margin-right:388px;
+margin-top:-3599px;
+padding-top:20px;
+}
+.me h1{
+  font-size: 17px;
+}
+.me1{
+display: flex;
+padding:7px;
+margin-top:-3549px;
+margin-left:989px;
+}
+.img1 img{
+  width:100px;
+  padding:4px;
+  height:70px;
+}
+.img2 img{
+  width:100px;
+  height:70px;
+  padding:4px
+}
+.img3 img{
+  width:100px;
+  height:70px;
+  padding:4px
+}
+.me2{
+display: flex;
+margin-left:989px;
+padding:7px;
+}
+.img4 img{
+  width:100px;
+  height: 70px;
+  padding:4px
+}
+.img5 img{
+  width:100px;
+  height:70px;
+  padding:4px
+}
+.img6 img{
+  width:100px;
+  height:70px;
+  padding:4px
+}
+.line{
+  border-bottom:1px solid rgb(210, 204, 204);
+  width:19%;
+  margin-left:999px;
+  padding-top:17px; 
+}
+/*BLOCK SECTION STARTS*/
+.tg{
+  margin-left:999px;
+  font-size:17px;
+  padding-top:17px;
+}
+.block1{
+  display: flex;
+  margin-left:999px;
+}
+.p1{
+  width:66px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  font-size: 13px;
+  padding:5px;
+  color: grey;
+  text-align: center;
+}
+.p1:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p2{
+  width:66px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p2:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p3{
+  width:66px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p3:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+
+/*block1 ends */
+.block2{
+  display: flex;
+  margin-left:999px;
+}
+.p4{
+  width:60px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  font-size: 13px;
+  padding:5px;
+  color: grey;
+  text-align: center;
+}
+.p4:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p5{
+  width:60px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p5:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p6{
+  width:90px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p6:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+
+/*block 2 ends*/
+.block3{
+  display: flex;
+  margin-left:999px;
+}
+.p7{
+  width:99px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  font-size: 13px;
+  padding:5px;
+  color: grey;
+  text-align: center;
+}
+.p7:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p8{
+  width:60px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p8:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.p9{
+  width:66px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p9:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+/*block 3 ends*/
+.block4{
+  display: flex;
+  margin-left:999px;
+}
+.p10{
+  width:64px;
+  height:33px;
+  background-color:white;
+  box-shadow: 0px 1px 4px rgba(0,1,1,.2);
+  margin: 5px;
+  padding:5px;
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+}
+.p10:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(92, 92, 228);
+}
+.line1{
+  border-bottom:1px solid rgb(210, 204, 204);
+  width:17%;
+  margin-left:999px;
+  padding-top:25px; 
+}
+.pst h2{
+  margin-left:999px;
+  font-size:17px;
+  padding-top:17px;
+}
+.p11{
+  font-size:13px;
+  margin-left:999px;
+  color:grey;
+}
+.p12{
+  font-size:13px;
+  margin-left:999px;
+  color:grey;
+}
+.p13{
+  font-size:13px;
+  margin-left:999px;
+  color:grey;
+}
+.p14{
+  font-size:13px;
+  margin-left:999px;
+  color:grey;
+}
+.p15{
+  font-size:13px;
+  margin-left:999px;
+  color:grey;
+}
+.line2{
+  border-bottom:1px solid rgb(210, 204, 204);
+  width:17%;
+  margin-left:999px;
+  padding-top:20px; 
+}
+/*BLOCK SECTION ENDS*/
+
+/*footer 4 starts*/
+.footer4{
+    background-color:#232628;
+    height:270px;
+    margin-top:2899px;
+    border-bottom:1px solid rgb(210, 204, 204);
+}
+.foot9 h4{
+    color:white;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot9 h4 span{
+  color:#68a4c4;
+}
+.foot9 p{
+  color: grey;
+}
+.foot10 h4{
+    color:#e3e7ea;
+    padding-top:40px;
+    font-size:15px;
+}
+.fo6{
+  display: flex;
+}
+.fo7 img{
+  width:70px;
+  padding:4px;
+}
+.fo8 img{
+width:70px;
+padding:4px;
+}
+.fo9 img{
+width:70px;
+padding:4px;
+}
+.fo10 img{
+width:70px;
+padding:4px;
+}
+.foot11 h4{
+  color:#dde6eb;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot11 p{
+    color:grey;
+    margin-top:7px;
+    font-size:13px;
+}
+.foot11 h5{
+  color:blue;
+  font-size:12px;
+}
+.foot12 h4{
+    color:#dde6eb;
+    padding-top:40px;
+    font-size:15px;
+}
+.social2{
+  display: flex;
+  cursor: pointer;
+}
+
+.face2 img{
+  width:40px;
+  margin:4px;
+}
+.twit2 img{
+width:40px;
+margin:4px;
+}
+.insta2 img{
+  width:40px;
+  margin:4px;
+}
+.lin2 img{
+  width:40px;
+  margin:4px;
+}
+/*footer4 ends*/
+
+/*footer 5 starts*/
+.footer5{
+    background-color:#232628;
+    height:250px;
+    padding:80px;
+    border-bottom:1px solid grey;
+}
+.foot13 h2{
+ color:white;
+ font-size:15px;
+}
+.input-group{
+    width:80%;
+    height:40px;
+}
+.input-group span img{
+  width:20px;
+}
+.foot13 h4{
+  color:white;
+  font-family: "montserrat",sans-serif;
+  font-size:15px;
+  font-weight:400;
+}
+.foot13 p{
+  color:grey;
+  padding:5px;
+}
+.foot14 h4{
+  color:white;
+  font-size:15px;
+}
+.foot14 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot15 h4{
+  color:white;
+  font-size:15px;
+}
+.foot15 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot16 h4{
+  color:white;
+  font-size:15px;
+}
+.foot16 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* footer 5 ends*/
+
+.footer6{
+    background-color:#232628;
+    height:70px;
+    border-bottom:1px solid grey;
+}
+.footer6 p{
+  color:grey;
+  margin-left:100px;
+  padding-top:30px;
+}
+.lastpho2{
+  float:right;
+  margin-top:-40px;
+  margin-right:140px;
+  cursor: pointer;
+}
+.fa2{
+  width:27px;
+  padding: 4px;
+}
+.twi2{
+  width:27px;
+  padding: 4px;
+}
+.ins2{
+  width:25px;
+  padding: 4px;
+}
+.li2{
+  width:27px;
+  padding: 4px;
+}
+</style>
+<body> 
+  <div class="start">
+    <p>CAR DEALERSHIP TWO ELEMENTOR > BLOG</p>
+  </div>
+  <div class="hh" style="margin-top:-90px; margin-left:160px;">
+    <h1><b>BLOG</b></h1>
+    </div>        
+  </div>
+
+  <!--6cards-->
+<div class="tes">
+<img src="../static/images/2015_Tesla_Model.jpg">
+<h1><b>Tesla Model S:Top Secret Car Collector's Garage</b></h1>
+</div>
+<div class="po1">
+<img src="../static/images/2693710.png">
+<h4>November 18,2015</h4>
+<h5>Posted by: Stylemix Themes</h5>
+<div class="com1">
+<img src="../static/images/2760210.png">
+<h6>No Comments</h6>
+</div>
+</div>
+<!--tesla ends-->
+
+<div class="hyun">
+<img src="../static/images/Hyundai-Tucson.jpg">
+<h1><b>Largest Selection of New Hyundai's in the Greater Seatlle Area</b></h1>
+</div>
+<div class="po2">
+<img src="../static/images/2693710.png">
+<h4>October 5,2022</h4>
+<h5>Posted by: Bob Rider</h5>
+<div class="com2">
+<img src="../static/images/2760210.png">
+<h6>No Comments</h6>
+</div>
+</div>
+<!--hyun ends-->
+
+<div class="foto">
+<img src="../static/images/Fotolia.jpg">
+<h1><b>All Colors & Trims are always in stock</b></h1>
+</div>
+<div class="po3">
+<img src="../static/images/2693710.png">
+<h4>December 1,2015</h4>
+<h5>Posted by: Stylemix Themes</h5>
+<div class="com3">
+<img src="../static/images/2760210.png">
+<h6>No Comments</h6>
+</div>
+</div>
+
+<!--foto ends-->
+
+<div class="ford">
+<img src="../static/images/Ford-F.jpg">
+<h1><b>The 2017 Ford-F Raptor-A First Look</b></h1>
+</div>
+<div class="po4">
+<img src="../static/images/2693710.png">
+<h4>November 23,2015</h4>
+<h5>Posted by: Stylemix Themes</h5>
+<div class="com4">
+<img src="../static/images/2760210.png">
+<h6>No Comments</h6>
+</div>
+</div>
+<!--ford ends-->
+
+<div class="paral">
+  <img src="../static/images/first-parallax.jpg">
+  <h1><b>Fifth consecutive year the Hyundai is recognised by Ruedas ESPN</b></h1>
+  </div>
+  <div class="po5">
+  <img src="../static/images/2693710.png">
+  <h4>November 15,2015</h4>
+  <h5>Posted by: Stylemix Themes</h5>
+  <div class="com5">
+  <img src="../static/images/2760210.png">
+  <h6>No Comments</h6>
+  </div>
+  </div>
+<!--parallax ends-->
+
+<div class="tes2">
+  <img src="../static/images/tesla-1100.jpg">
+  <h1><b>Nissan vehicles are distributed throughout the Unites States</b></h1>
+  </div>
+  <div class="po6">
+  <img src="../static/images/2693710.png">
+  <h4>November 15,2015</h4>
+  <h5>Posted by: Stylemix Themes</h5>
+  <div class="com6">
+  <img src="../static/images/2760210.png">
+  <h6>No Comments</h6>
+  </div>
+  </div>
+<!--tesla 2 ends-->
+
+
+<div class="ast">
+  <img src="../static/images/Aston_Martin.jpg">
+  <h1><b>Motors Rock! We strive to deliver a superior experience</b></h1>
+  </div>
+  <div class="po7">
+  <img src="../static/images/2693710.png">
+  <h4>October 5,2014</h4>
+  <h5>Posted by: Bob Rider</h5>
+  <div class="com7">
+  <img src="../static/images/2760210.png">
+  <h6>No Comments</h6>
+  </div>
+  </div>
+<!--aston ends-->
+
+
+  <div class="sharp">
+    <img src="../static/images/sharp_tool.jpg">
+    <h1><b>Tap yourself on the back for being a savy car shopper</b></h1>
+    </div>
+    <div class="po8">
+    <img src="../static/images/2693710.png">
+    <h4>August 10,2014</h4>
+    <h5>Posted by: Bob Rider</h5>
+    <div class="com8">
+    <img src="../static/images/2760210.png">
+    <h6>No Comments</h6>
+    </div>
+    </div>
+  
+<!--sharp tool ends-->
+
+  
+<div class="te">
+<h2><b>TEXT WIDGET</b></h2>
+<h3>We know there isn’t much more frustrating<br>than being without your vehicle while it gets<br>repaired.</h3>
+<p>Are you ready to give your car the<br>service it is asking for? Schedule car<br>maintenance or repair right here. Our<br>top-notch service staff can get your car<br>or truck in and out quickly.</p>
+</div>
+
+
+    
+<div class="me">
+  <h1><b>MEDIA LIBRARY</b></h1>
+  </div>
+  <div class="me1">
+    <div class="img1">
+      <img src="../static/images/62-1109.jpg">
+    </div>
+    <div class="img2">
+      <img src="../static/images/blue.jpg">
+
+    </div>
+    <div class="img3">
+      <img src="../static/images/16-1109.jpg">
+    </div>
+</div>
+
+
+    <div class="me2">
+      <div class="img4">
+        <img src="../static/images/5-1109.jpg">
+      </div>
+      <div class="img5">
+        <img src="../static/images/35.jpg">
+  
+      </div>
+      <div class="img6">
+        <img src="../static/images/49-1109.jpg">
+      </div>
+      </div>
+
+
+<div class="line"></div>
+
+<h1 class="tg"><b>TAGS</b></h1>
+
+<div class="block1">
+  <p class="p1">Autopilot</p>
+  <p class="p2">Awards</p>
+  <p class="p3">Dealer</p>
+</div>
+
+<div class="block2">
+  <p class="p4">Future</p>
+  <p class="p5">Light</p>
+  <p class="p6">Management</p>
+</div>
+
+<div class="block3">
+  <p class="p7">Marketing plan</p>
+  <p class="p8">Motors</p>
+  <p class="p9">Projects</p>
+</div>
+
+<div class="block4">
+  <p class="p10">Vehicles</p>
+</div>
+
+<div class="line1"></div>
+
+<div class="pst">
+  <h2><b>RECENT POSTS</b></h2>
+  </div>
+  <p class="p11">Largest Selection of New Hyundai's in the<br>Greater Seatlle Area</p>
+  <p class="p12">All Colors & Trims are always in stock</p>
+  <p class="p13">The 2017 Ford-F Raptor-A First Look</p>
+  <p class="p14">Tesla Model S:Top Secret Car Collector's<br>Garage</p>
+  <p class="p15">Fifth consecutive year the Hyundai is<br>recognised by Ruedas ESPN</p>
+
+<div class="line2"></div>
+
+<!--FOOTER 4 STARTS-->
+
+<div class="footer4">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<div class="foot9">
+<h4><span>MOTORS</span> WORDPRESS THEME</h4>
+<p>Fusce interdum ipsum egestas urna amet<br>fringilla, et placerat ex venenatis.Aliquet<br>luctus pharetra. Proin sed fringilla lectus…<br>
+ar sit amet tellus in mollis. Proin nec<br>egestas nibh, eget egestas urna. Phasellus<br>sit amet vehicula nunc. In hac habitasse<br>platea dictumst.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="foot10">
+<h4>PHOTO GALLERY</h4>
+<div class="fo6">
+<div class="fo7">
+<img src="../static/images/nissan_altima_3.jpeg">
+</div>
+<div class="fo8">
+<img src="../static/images/35.jpg">
+</div>
+<div class="fo9">
+<img src="../static/images/blue.jpg">
+</div>
+<div class="fo10">
+<img src="../static/images/red.jpg">
+</div>
+</div>          
+</div>
+</div>
+
+<div class="col-md-3">
+  <div class="foot11">
+    <h4>LATEST BLOG POSTS</h4>
+    <p>The Tesla Model S isn’t the first truly<br>autonomous car on the road...</p>
+    <h5>NO COMMENTS</h5>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div class="foot12">
+    <h4>SOCIAL NETWORK</h4>
+    <div class="social2">
+      <div class="face2">
+        <img src="../static/images/icons8-facebook-48.png">
+      </div>
+      <div class="twit2">
+        <img src="../static/images/icons8-twitter-48.png">
+      </div>
+      <div class="insta2">
+        <img src="../static/images/icons8-instagram-50.png">
+      </div>
+      <div class="lin2">
+        <img src="../static/images/icons8-linkedin-30.png">
+      </div>
+  </div>          
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="footer5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="foot13">
+          <h2>SUBSCRIBE</h2>
+          <div class="input-group">
+            <input type="text"  class="form-control" placeholder="Enter your email...">
+            <span class="input-group-text"><img src="../static/images/wifi.png"></span>
+            <p>Get latest updates and offers.</p>
+          </div>        
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="foot14">
+          <h4>SALES HOUR</h4>
+          <p>Monday – Friday: 09:00AM – 09:00PM<br>
+            Saturday: 09:00AM – 07:00PM<br>
+            Sunday: Closed
+            </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="foot15">
+          <h4>SERVICE HOURS</h4>
+         <p>Monday – Friday: 09:00AM – 09:00PM<br>
+          Saturday: 09:00AM – 07:00PM<br>
+          Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="foot16">
+          <h4>PARTS HOURS</h4>
+          <p>Monday – Friday: 09:00AM – 09:00PM<br>
+            Saturday: 09:00AM – 07:00PM<br>
+            Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FOOTER5 ENDS-->
+
+<div class="footer6">
+  <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes.</p>
+  <div class="lastpho2">
+    <a href="https://www.facebook.com/">
+      <img class="fa2" src="../static/images/icons8-facebook-48.png"></a>
+    <a href="https://twitter.com/">
+      <img class="twi2" src="../static/images/icons8-twitter-48.png"></a>
+    <a href="https://www.instagram.com/">
+      <img class="ins2" src="../static/images/icons8-instagram-50.png"></a>
+    <a href="https://www.linkedin.com/">
+      <img class="li2" src="../static/images/icons8-linkedin-30.png"></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+<div class="container">
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert-{{ message.tags }} alert">
+      {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js;
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+</body>
+</html>

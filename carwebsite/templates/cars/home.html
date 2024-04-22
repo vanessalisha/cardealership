@@ -1,0 +1,1010 @@
+<!-- home.html -->
+{% extends 'cars/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Car Dealership Two Elementor</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel-="stylesheet" href='{% static "style.css" %}'>
+</head>
+<script>$(document).ready(function() {
+
+  var counters = $(".count");
+  var countersQuantity = counters.length;
+  var counter = [];
+
+  for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+  }
+
+  var count = function(start, value, id) {
+    var localStart = start;
+    setInterval(function() {
+      if (localStart < value) {
+        localStart++;
+        counters[id].innerHTML = localStart;
+      }
+    }, 40);
+  }
+
+  for (j = 0; j < countersQuantity; j++) {
+    count(0, counter[j], j);
+  }
+});
+</script>
+<style>
+.cap1{
+  padding-bottom: 21%;
+}
+.cap1 h1{
+  font-size:48px;
+}
+.cap1 h3{
+  color:rgb(254, 210, 63);
+  font-size: 31px;
+}
+.cap1 p{
+  font-style: inherit;
+  font-size: 24px;
+}
+.btn1{
+    width:17%;
+    height:24%;
+    border:2px solid #e1e7ea;
+    border-radius: 3px;
+    background-color:transparent;
+    color:white;
+    font-size:19px;
+    line-height:2;
+    font-family: "open-sans", sans-serif;
+    font-weight:400;
+}
+.btn1:hover{
+  background-color: rgb(254, 210, 63);
+}
+.btn2{
+    width:17%;
+    height:24%;
+    border:2px solid #e1e7ea;
+    border-radius: 3px;
+    background-color:transparent;
+    color:white;
+    font-size:19px;
+    line-height:2;
+    font-family: "open-sans", sans-serif;
+    font-weight:400;
+    margin-left:10px;
+}
+.btn2:hover{
+  background-color: rgb(93, 134, 230);
+}
+.btn3{
+    width:29%;
+    height:37px;
+    border:2px solid #e1e7ea;
+    border-radius: 3px;
+    background-color:transparent;
+    color:white;
+    font-size:12px;
+    line-height:2;
+    font-family: "open-sans", sans-serif;
+}
+.btn3:hover{
+  background-color: rgb(254, 210, 63);
+}
+.btn4{
+  width:29%;
+    height:37px;
+    border:2px solid #e1e7ea;
+    border-radius: 3px;
+    background-color:transparent;
+    color:white;
+    font-size:12px;
+    line-height:2;
+    font-family: "open-sans", sans-serif;
+    margin-left:10px;
+}
+.btn4:hover{
+  background-color: rgb(93, 134, 230);
+}
+.cap2{
+  background-color:rgb(8, 8, 8) ;
+  opacity: 0.6;
+  height:300px;
+  width:50%;
+  text-align: left;
+  padding-left: 27px;
+  padding-bottom:35px;
+}
+.cap2 h2{
+  font-size:35px;
+  padding-top:45px;
+}
+.cap2 span{
+  color:rgb(254, 210, 63);
+}
+.cap2 h3{
+  font-size:18px;
+}
+.cap2 p{
+  font-style: inherit;
+  font-size: 17px;
+}
+.black{
+  background-color: rgb(37, 40, 40);
+  padding-top:200px;
+  width:1160px;
+  height:20px;
+  margin-left:165px;
+  margin-top: -50px;
+  z-index: 1;
+  position: absolute;
+}
+.black h1{
+  color:rgb(252, 252, 252);
+  margin-top:-150px;
+  margin-left:70px;
+  font-size: 24px;
+}
+.for3 button{
+  margin-left:40px;
+  width:110px;
+  height:40px;
+  color:white;
+  background-color: black;
+}
+.for3 button:hover{
+  background-color: #f8b61b;
+}
+.gallery h2{
+  margin-top:170px;
+  font-size:36px;
+  font-weight: 700;
+  text-align: center;
+  font-family:'montserrat'sans-serif;
+  
+}
+.gallery h2 span{
+  color:#f8b61b;
+}
+.gallery p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "open-sans",sans-serif;
+}
+.tower{
+  padding-top:40px;
+}
+.tower img{
+  width:100%;
+  height:510px;
+}
+.to1{
+  height:300px;
+  width:33%;
+  text-align:left;
+  margin-top:-400px;
+  margin-left:220px;
+  z-index: 1;
+  padding:30px;
+  position: absolute;
+  box-shadow: #e1e7ea;
+  background-color:white;
+}
+.to1 h3{
+  font-family:'montserrat'sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.top1 p{
+  font-family: "montserrat", arial;
+  font-weight:400;
+  font-size: 16px;
+}
+.to1 img{
+  width:90px;
+  height:70px;
+}
+.to1 button{
+  background-color: rgb(83, 83, 219);
+  color:white;
+  border: none;
+  width:30%;
+  height:50px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.to1 button:hover{
+  background-color: #f8b61b;
+}
+.to2{
+  height:300px;
+  width:33%;
+  text-align:left;
+  margin-top:-400px;
+  margin-left:740px;
+  background-color: #f8b61b;
+  z-index: 1;
+  padding:30px;
+  position: absolute;
+}
+.to2 h3{
+  font-family:'montserrat'sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+.top2 p{
+  font-family: "montserrat", arial;
+  font-weight:400;
+  font-size: 16px;
+}
+.to2 img{
+  width:70px;
+  height:80px;
+}
+.to2 button{
+  background-color: rgb(83, 83, 219);
+  color:white;
+  border: none;
+  width:30%;
+  height:50px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.to2 button:hover{
+  background-color:black;
+}
+.smallcard{
+margin-left:267px;
+padding-top:70px;
+}
+
+.card1{
+  border: 1px rgb(172, 169, 169);
+  border-style:solid;
+  width:310px;
+  height:147px;
+  padding:20px;
+  text-align: center;
+}
+.card1 h3{
+  font-size:16px;
+  font-family:"montserrat" sans-serif;
+  font-weight:700;
+}
+.card1 p{
+font-size:14px;
+font-family:"montserrat" Arial;
+font-weight:400 ;
+}
+
+.card2{
+  border: 1px rgb(172, 169, 169);
+  border-style:solid;
+  width:310px;
+  height:147px;
+  padding:20px;
+  text-align: center;
+  margin-left:20px;
+}
+.card2 h3{
+  font-size:16px;
+  font-family:"montserrat" sans-serif;
+  font-weight:700;
+}
+.card2 p{
+font-size:14px;
+font-family:"montserrat" Arial;
+font-weight:400 ;
+}
+
+.card3{
+  border: 1px rgb(172, 169, 169);
+  border-style:solid;
+  width:310px;
+  height:147px;
+  padding:20px;
+  text-align: center;
+  margin-left:20px;
+}
+.card3 h3{
+  font-size:16px;
+  font-family:"montserrat" sans-serif;
+  font-weight:700;
+}
+.card3 p{
+font-size:14px;
+font-family:"montserrat" Arial;
+font-weight:400 ;
+}
+.blackcusto{
+padding-top:70px;
+position: relative;
+}
+.blackcusto img{
+  width:100%;
+  height:500;
+}
+.miss{
+  margin-top:-580px;
+  text-align: center;
+}
+.miss img{
+  border-radius:50%;
+  width:140px;
+  border-style: solid;
+  border-color: #f8f8f8;
+  border-width:8px;
+}
+.miss h3{
+  color:white;
+  font-family: "montserrat",Arial;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top:10px;
+}
+.miss h5{
+  color:rgb(161, 139, 139)
+}
+.miss p{
+  color:white;
+  font-family:"open-sans",sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.whitecar{
+  padding-top:110px;
+
+}
+.whitecar img{
+  box-shadow:whitesmoke 0 0 0 10px !important;
+  z-index:1;
+  position: absolute;
+  margin-left:300px;
+  width:900px;
+  height:550px;
+  border-radius: 10px;
+}
+.text1 h2{
+  font-size:45px;
+}
+.text1 p{
+  font-size: 15px;
+}
+.text2 h2{
+  font-size:45px;
+}
+.text2 p{
+  font-size: 15px;
+}
+.text3 h2{
+  font-size:45px;
+}
+.text3 p{
+  font-size: 15px;
+}
+.text4 h2{
+  font-size:45px;
+}
+.text4 p{
+  font-size: 15px;
+}
+.mo{
+  padding-top:650px;
+  text-align: center;
+}
+.mo span{
+  color:rgb(255,177,41);
+}
+.mo img{
+  width:110px;
+}
+.yellowbox{
+  background-color: rgb(250, 164, 14);
+  width:100%;
+  height:140px;
+}
+.yellowbox h2{
+  margin-left:170px;
+  padding-top:50px;
+  line-height: 22px;
+  font-size: 30px;
+  font-family: "open-sans"Arial;
+}
+.phone img{
+  width:30px;
+  float: left;
+  margin-left:850px;
+  margin-top:-30px;
+}
+.phone p{
+  float: left;
+  margin-left:885px;
+  margin-top:-35px;
+  font-size: 25px;
+}
+.phone button{
+  float: left;
+  margin-left:1127px;
+  margin-top:-51px;
+  width:129px;
+  height:50px;
+  border-style: solid;
+  border-color: #e9e0cb;
+  background-color:transparent;
+}
+.phone button:hover{
+  background-color: white;
+}
+/*THE FIRST FOOTER START*/
+.footer{
+    background-color:#232628;
+    height:270px;
+    padding:25px;
+    border-bottom:1px solid grey;
+}
+.foot1 h4{
+    color:white;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot1 h4 span{
+  color:#68a4c4;
+}
+.foot1 p{
+  font-size: 13px;
+  color:grey;
+}
+.foot2 h4{
+    color:#e3e7ea;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot2 h4{
+    color:white;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot3 h4{
+  color:#dde6eb;
+    padding-top:40px;
+    font-size:15px;
+}
+.foot3 p{
+    color:grey;
+    margin-top:7px;
+    font-size:13px;
+}
+.foot3 h5{
+  color:blue;
+  font-size:12px;
+}
+.foot4 h4{
+    color:#dde6eb;
+    padding-top:40px;
+    font-size:15px;
+}
+.fo1{
+  display: flex;
+}
+.fo2 img{
+  width:70px;
+  padding:4px;
+}
+.fo3 img{
+width:70px;
+padding:4px;
+}
+.fo4 img{
+width:70px;
+padding:4px;
+}
+.fo5 img{
+width:70px;
+padding:4px;
+}
+.social{
+  display: flex;
+  cursor: pointer;
+}
+.face img{
+  width:40px;
+  margin:4px;
+}
+.twit img{
+width:40px;
+margin:4px;
+}
+.insta img{
+  width:40px;
+  margin:4px;
+}
+.lin img{
+  width:40px;
+  margin:4px;
+}
+/*footer 1 ends*/
+.footer2{
+    background-color:#232628;
+    height:250px;
+    padding:80px;
+    border-bottom:1px solid grey;
+}
+.footer2 h2{
+ color:white;
+ font-size:15px;
+}
+.input-group{
+    width:80%;
+    height:40px;
+}
+.input-group span img{
+  width:20px;
+}
+.foot5 h4{
+  color:white;
+  font-family: "montserrat",sans-serif;
+  font-size:15px;
+  font-weight:400;
+}
+.foot5 p{
+  color:grey;
+  padding:5px;
+}
+.foot6 h4{
+  color:white;
+  font-size:15px;
+}
+.foot6 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot7 h4{
+  color:white;
+  font-size:15px;
+}
+.foot7 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot8 h4{
+  color:white;
+  font-size:15px;
+}
+.foot8 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+/*footer2 ends*/
+.footer3{
+    background-color:#232628;
+    height:70px;
+    border-bottom:1px solid grey;
+}
+.footer3 p{
+  color:grey;
+  margin-left:100px;
+  padding-top:30px;
+}
+.lastpho{
+  float:right;
+  margin-top:-40px;
+  margin-right:140px;
+  cursor: pointer;
+}
+.fa{
+  width:27px;
+  padding: 4px;
+}
+.twi{
+  width:27px;
+  padding: 4px;
+}
+.ins{
+  width:25px;
+  padding: 4px;
+}
+.li{
+  width:27px;
+  padding: 4px;
+}
+/*footer3 ends*/
+</style>
+<body>
+
+  <div id="carouselExample" class="carousel slide" style="position: relative;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/slide_1.jpg'%}" class="d-block w-100" style="width:100%">
+        <div class="carousel-caption">
+          <div class="cap1">
+          <h1><b>Mercedes-Benz AMG GT 2017</b></h1>
+          <h3><b>$320</b></h3>
+          <p>FOR 36 MONTHS</p>
+          <button class="btn1"><b>TEST DRIVE</b></button><button class="btn2"><b>LEARN MORE</b></button>
+        </div>   
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/slide_1.jpg'%}" class="d-block w-100" style="width:100%">
+        <div class="carousel-caption">
+          <div class="cap2">
+          <h2><span>2018 NEW</span> TOYOTA<br>HIGHLANDER LE</h2>
+          <h3>$499 per Month for 24 months. 0%</h3>
+          <p>APR Respresentative</p>
+          <button class="btn3"><b>TEST DRIVE</b></button><button class="btn4"><b>LEARN MORE</b></button>
+        </div>   
+      </div>
+    </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+
+<div class="black">
+    <h1>Search Inventory</h1>
+    <form action="">
+      <select id="cars" name="cars" style="width:197px; height:44px; float: left; margin-left: 130px; cursor: pointer;" >
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
+    <div class="for2">
+      <form action="">
+        <select id="cars" name="cars" style="width:197px; height:44px; float:left; margin-left: 120px; cursor: pointer;">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </form>
+<div class="for3">
+  <form action="">
+    <select id="cars" name="cars" style="width:197px; height:44px;float:left; margin-left: 100px; cursor: pointer;">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form>
+<button>Search</button>  
+</div>      
+    </div>
+</div> <!--black main div-->
+
+<!--Cars 6 photos-->
+<div class="gallery">
+  <h2>RECENT <span>CARS</span></h2>
+  <p>Curabitur tellus leo, euismod sit amet gravida at, egestas sed commodo.</p>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="width:70%; margin-left:210px;">
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/motor-1.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(53, 50, 50)">
+        <h5 class="card-title" style="font-size:16px; color:white">2016 MERCEDES-BENZ<br>C-CLASS 300<br>4MA..</h5>
+      <button class="bb1"style="float:right; margin-top:-60px; width:113px; height:50px; font-size:15px;color:white; background-color:rgb(120, 120, 247);">BUY ONLINE<br><b>$35 000</b></button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/nissan_altima2.jpeg" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(53, 50, 50)">
+        <h5 class="card-title" style="font-size: 16px; color:white;">NISSAN ALTIMA 2.5 SL,<br>LEATHER,SUNR...</h5>
+        <button class="bb2" style="float: right; margin-top:-47px; width:113px;height:50px;font-size:15px;color:white;background-color: rgb(127, 120, 247);">BUY ONLINE<br><b>$18 000</b></button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/redcar3.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(53, 50, 50)">
+        <h5 class="card-title" style="font-size:14px; color:white">2021 NEW TELSA<br>ROADSTER</h5>
+        <button class="bb3" style="float:right; margin-top:-43px; width:113px; height:50px; font-size:15px;color:white; background-color:rgb(120, 120, 247);">BUY ONLINE<br><b>$109 000</b></button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/whitebig4.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: rgb(53, 50, 50)">
+          <h5 class="card-title" style="font-size:14px; color:white">LEXUS RX-350 WHITE<br>LEATHER & HA...</h5>
+          <button class="bb4" style="float:right; margin-top:-43px; width:113px; height:50px; font-size:15px;color:white; background-color:rgb(120, 120, 247);">BUY ONLINE<br><b>$22 000</b></button>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/cruze5.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="../static/images/yellow6.jpeg" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(53, 50, 50)">
+        <h5 class="card-title" style="font-size:14px; color:white">LEXUS RX-350 WHITE<br>LEATHER & HA...</h5>
+        <button class="bb6" style="float:right; margin-top:-40px; width:113px; height:50px; font-size:15px;color:white; background-color:rgb(120, 120, 247);">BUY ONLINE<br><b>$22 000</b></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Cars 6 photos ends-->
+
+
+<div class="tower">
+<img src="{% static 'images/iconboxbg.jpg'%}">
+<div class="to1">
+  <img src="../static/images/car-512.webp">
+<h3>LOOKING FOR A CAR?</h3>
+<p>Our cars are delivered fully-registered with all requirements<br>completed. We’ll deliver your car wherever you are.</p>
+<button><b>INVENTORY</b></button>
+</div>
+<div class="to2">
+  <img src="../static/images/car-512.webp">
+  <h3>WANT TO SELL A CAR?</h3>
+  <p>Receive the absolute best value for your trade-in vehicle.<br>We even handle all paperwork. Schedule appointment!</p>
+  <button><b>SELL YOUR CAR</b></button>
+</div>  
+</div> <!--main div of tower-->
+
+
+<div class="smallcard">
+  <div class="row row-cols-1 row-cols-md-3 g-2">
+<div class="card1">
+  <h3>WIDE RANGE OF BRANDS</h3>
+  <p>With a robust selection of<br>popular vehicles on hand, as<br>well as leading vehicles from<br> BMW and Ford.</p>
+</div>
+
+<div class="card2">
+  <h3>TRUSTED BY THOUSANDS</h3>
+ <p>10 new offers every day. 350<br>offers on site, trusted by a<br>community of<br>thousands of users.</p>
+</div>
+
+<div class="card3">
+  <h3>SERVICE & MAINTENANCE</h3>
+  <p>ur stress-free finance<br>department that can find<br>financial solutions to save you<br>money.</p>
+</div>
+
+</div>
+</div><!--row div main-->
+
+
+<div class="blackcusto">
+  <img src="{% static 'images/review_bg.jpg'%}">
+  <div class="miss">
+    <img src="../static/images/2smile.jpg">
+    <h3>ROBERT FROST</h3>
+    <h5>Teacher</h5>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry. Lorem Ipsum has been the industry's standard dummy<br>text ever since the 1500s, when an unknown printer took a galley<br>of type and scrambled it to make a type specimen book.</p>
+  </div>
+  </div><!--blackcusto main div-->
+  
+  <div class="whitecar">
+    <img src="../static/images/999.jpg">
+    <div class="man1" style="padding-top:100px; margin-left:400px; z-index: 1; position:absolute; margin-top:100px;text-align: center;">
+    <div class="text1">
+      <h2 class="count">17600</h2>
+      <p>CARS FOR SELL</p>
+      </div>
+      <div class="text2">
+        <h2 class="count">6230</h2>
+        <p>VISTORS PER DAY</p>
+        </div>
+        </div>
+        <div class="man2" style="padding-top:100px; margin-left:940px; z-index: 1; position:absolute; margin-top:100px; text-align: center;">
+        <div class="text3">
+          <h2 class="count">3500</h2>
+          <p>DEALER REVIEWS</p>
+          <div class="text4">
+            <h2 class="count">2250</h2>
+            <p>VERIFIED DEALERS</p>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="mo">
+  <h1><b>WELCOME TO <span>MOTORS</span></b></h1>
+  <p>With specialists on hand to help with any part of the car shopping or vehicle ownership experience, Motors provides financing,<br>car service and a great selection of vehicles for luxury car shoppers in Chicago, IL. Motors is ultimate Car Dealer,<br>
+    Automotive, Auto Dealer WordPress theme.</p>
+    <img src="../static/images/video.gif">
+</div>
+
+
+<div class="yellowbox">
+  <h2>HAVE A QUESTIONS?<b> FEEL FREE TO ASK...</b></h2>
+  <div class="phone">
+    <img src="../static/images/tele.png"/>
+    <p><b>+1 878-9674-4455</b></p> 
+    <button><b>FEEDBACK</b></button>
+    </div>
+  </div>
+
+
+  <!--FOOTER1 starts-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="foot1">
+            <h4><span>MOTORS</span> WORDPRESS THEME</h4>
+            <p>Fusce interdum ipsum egestas urna amet<br>fringilla, et placerat ex venenatis.Aliquet<br>luctus pharetra. Proin sed fringilla lectus…<br>
+              ar sit amet tellus in mollis. Proin nec<br>egestas nibh, eget egestas urna. Phasellus<br>sit amet vehicula nunc. In hac habitasse<br>platea dictumst.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot2">
+            <h4>PHOTO GALLERY</h4>
+            <div class="fo1">
+              <div class="fo2">
+                <img src="../static/images/nissan_altima_3.jpeg">
+              </div>
+              <div class="fo3">
+                <img src="../static/images/35.jpg">
+              </div>
+              <div class="fo4">
+                <img src="../static/images/blue.jpg">
+              </div>
+              <div class="fo5">
+                <img src="../static/images/red.jpg">
+              </div>
+          </div>          
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot3">
+            <h4>LATEST BLOG POSTS</h4>
+            <p>The Tesla Model S isn’t the first truly<br>autonomous car on the road...</p>
+            <h5>NO COMMENTS</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot4">
+            <h4>SOCIAL NETWORK</h4>
+            <div class="social">
+              <div class="face">
+                <img src="../static/images/icons8-facebook-48.png">
+              </div>
+              <div class="twit">
+                <img src="../static/images/icons8-twitter-48.png">
+              </div>
+              <div class="insta">
+                <img src="../static/images/icons8-instagram-50.png">
+              </div>
+              <div class="lin">
+                <img src="../static/images/icons8-linkedin-30.png">
+              </div>
+          </div>          
+
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!--FOOTER ENDS-->
+  <div class="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="foot5">
+            <h2>SUBSCRIBE</h2>
+            <div class="input-group">
+              <input type="text"  class="form-control" placeholder="Enter your email...">
+              <span class="input-group-text"><img src="../static/images/wifi.png"></span>
+              <p>Get latest updates and offers.</p>
+            </div>        
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot6">
+            <h4>SALES HOUR</h4>
+            <p>Monday – Friday: 09:00AM – 09:00PM<br>
+              Saturday: 09:00AM – 07:00PM<br>
+              Sunday: Closed
+              </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot7">
+            <h4>SERVICE HOURS</h4>
+           <p>Monday – Friday: 09:00AM – 09:00PM<br>
+            Saturday: 09:00AM – 07:00PM<br>
+            Sunday: Closed</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot8">
+            <h4>PARTS HOURS</h4>
+            <p>Monday – Friday: 09:00AM – 09:00PM<br>
+              Saturday: 09:00AM – 07:00PM<br>
+              Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--FOOTER2 ENDS-->
+<div class="footer3">
+  <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes.</p>
+  <div class="lastpho">
+    <a href="https://www.facebook.com/">
+      <img class="fa" src="../static/images/icons8-facebook-48.png"></a>
+    <a href="https://twitter.com/">
+      <img class="twi" src="../static/images/icons8-twitter-48.png"></a>
+    <a href="https://www.instagram.com/">
+      <img class="ins" src="../static/images/icons8-instagram-50.png"></a>
+    <a href="https://www.linkedin.com/">
+      <img class="li" src="../static/images/icons8-linkedin-30.png"></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {% endblock %}
+  <div class="container">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert-{{ message.tags }} alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js;
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8
+        crossorigin="anonymous"></script>
+</body>
+</html>

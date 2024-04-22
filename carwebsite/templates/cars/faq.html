@@ -1,0 +1,540 @@
+{% extends 'cars/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel-="stylesheet" href='{% static "style.css" %}'>
+    <title>contact</title>
+</head>
+<body>
+<style>
+  .accordion{
+  height:150px;
+  padding-top:140px;
+  width:40%;
+  margin-left:250px;
+  border: none;
+}
+.lib{
+  margin-left:1000px;
+}
+.lib h1{
+  font-size: 17px;
+}
+.gal1{
+  display: flex;
+  margin-left:900px;
+  padding:10px;
+}
+.pho1 img{
+  height:100px;
+  padding:7px
+
+}
+.pho2 img{
+  height:100px;
+  padding:7px
+}
+.pho3 img{
+  height:100px;
+  padding:7px
+
+}
+.gal2{
+  display: flex;
+  margin-left:910px;
+}
+.pho4 img{
+  height:100px;
+  padding:7px
+
+}
+.pho5 img{
+  height:100px;
+  padding:7px
+
+}
+.pho6 img{
+  height:100px;
+  padding:7px
+}
+.con{
+  margin-left:910px;
+  padding:20px;
+}
+.con h3{
+  font-size:17px;
+}
+.con h5{
+  font-size:16px;
+  font-weight: 400;
+}
+/*FOOTER 13 STARTS*/
+.footer13{
+background-color:#232628;
+height:270px;
+margin-left:-55px;
+margin-top:190px;
+border-bottom:1px solid rgb(210, 204, 204);
+}
+.foot33 h4{
+    color:white;
+    font-size:15px;
+    padding-top:40px;
+}
+.foot33 h4 span{
+  color:#68a4c4;
+}
+.foot33 p{
+  color: grey;
+  font-size:13px;
+}
+.foot34 h4{
+    color:#e3e7ea;
+    font-size:15px;
+    padding-top:40px;
+}
+.fo21{
+  display: flex;
+}
+.fo22 img{
+  width:70px;
+  padding:4px;
+}
+.fo23 img{
+width:70px;
+padding:4px;
+}
+.fo24 img{
+width:70px;
+padding:4px;
+}
+.fo25 img{
+width:70px;
+padding:4px;
+}
+.foot35 h4{
+  color:#dde6eb;
+  font-size:13px;
+  margin-left: 20px;
+  padding-top: 40px;
+}
+.foot35 p{
+    color:grey;
+    margin-top:7px;
+    font-size:13px;
+    margin-left: 20px;
+}
+.foot35 h5{
+  color:blue;
+  font-size:12px;
+  margin-left: 20px;
+}
+.foot36 h4{
+    color:#dde6eb;
+    font-size:15px;
+    padding-top:40px;
+}
+.social5{
+  display: flex;
+  cursor: pointer;
+}
+.face5 img{
+  width:40px;
+  margin:4px;
+}
+.twit5 img{
+width:40px;
+margin:4px;
+}
+.insta5 img{
+  width:40px;
+  margin:4px;
+}
+.lin5 img{
+  width:40px;
+  margin:4px;
+}
+/*FOOTER 13 ENDS*/
+
+/*FOOTER 14 STARTS*/
+.footer14{
+background-color:#232628;
+height:250px;
+margin-left:-50px;
+border-bottom:1px solid grey;
+}
+.foot37 h2{
+ color:white;
+ font-size:15px;
+ padding-top:40px;
+}
+.input-group{
+    width:80%;
+    height:40px;
+}
+.input-group span img{
+  width:20px;
+}
+.foot37 h4{
+  color:white;
+  font-family: "montserrat",sans-serif;
+  font-size:15px;
+  font-weight:400;
+}
+.foot37 p{
+  color:grey;
+  padding:5px;
+}
+.foot38 h4{
+  color:white;
+  font-size:15px;
+  padding-top: 40px;
+}
+.foot38 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot39 h4{
+  color:white;
+  font-size:15px;
+  padding-top: 40px;
+}
+.foot39 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.foot40 h4{
+  color:white;
+  font-size:15px;
+  padding-top: 40px;
+}
+.foot40 p{
+  color:white;
+  font-weight: 400;
+  font-size: 14px;
+}
+/*FOOTER 14 ENDS*/
+
+/*FOOTER STARTS 15*/
+.footer15{
+    background-color:#232628;
+    height:70px;
+    margin-left:-50px;
+    border-bottom:1px solid grey;
+}
+.footer15 p{
+  color:grey;
+  margin-left:100px;
+  padding-top:30px;
+}
+.lastpho5{
+  float:right;
+  margin-top:-40px;
+  margin-right:140px;
+  cursor: pointer;
+}
+.fa5{
+  width:27px;
+  padding: 4px;
+}
+.twi5{
+  width:27px;
+  padding: 4px;
+}
+.ins5{
+  width:25px;
+  padding: 4px;
+}
+.li5{
+  width:27px;
+  padding: 4px;
+}
+
+
+
+
+
+</style>
+      </head>
+      <body>
+      
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                 <b>Do You Want to sell a car?</b></button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <img src="../static/images/faq.jpeg" style="float:left; padding:10px;">
+                  Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Schedule your appointment today!
+                  Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut
+                  Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh. Praesent ullamcorper commodo elementum. Donec ultrices neque nec turpis semper molestie. Duis pulvinar quam sit amet tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <b>Are You looking for a new car? </b></button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  We appreciate you taking the time today to visit our web site. Our goal is to give you an interactive tour of our new and used inventory, as well as allow you to conveniently get a quote, schedule a service appointment, or apply for financing. The search for a luxury car is filled with high expectations.
+                  Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut.
+                  Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh. Praesent ullamcorper commodo elementum. Donec ultrices neque nec turpis semper molestie. Duis pulvinar quam sit amet tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                 <b>Maintain your car to stay safe on the road</b> </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <img src="../static/images/faq.jpeg" style="float:left; padding:10px;">
+                  Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Schedule your appointment today!
+                  Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut
+                  Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh. Praesent ullamcorper commodo elementum. Donec ultrices neque nec turpis semper molestie. Duis pulvinar quam sit amet tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                 <b>We know how to handle a wide range of car services</b> </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  We appreciate you taking the time today to visit our web site. Our goal is to give you an interactive tour of our new and used inventory, as well as allow you to conveniently get a quote, schedule a service appointment, or apply for financing. The search for a luxury car is filled with high expectations.
+                  Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut.
+                  Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh. Praesent ullamcorper commodo elementum. Donec ultrices neque nec turpis semper molestie. Duis pulvinar quam sit amet tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  
+
+<div class="lib">
+  <h1>MEDIA LIBRARY</h1>
+  </div>
+  <div class="gal1">
+    <div class="pho1">
+      <img src="../static/images/pho1.jpg">
+    </div>
+    <div class="pho2">
+      <img src="../static/images/pho2.jpg">
+
+    </div>
+    <div class="pho3">
+      <img src="../static/images/pho3.jpg">
+    </div>
+</div>
+
+
+    <div class="gal2">
+      <div class="pho4">
+        <img src="../static/images/pho4.jpg">
+      </div>
+      <div class="pho5">
+        <img src="../static/images/pho5.jpg">
+  
+      </div>
+      <div class="pho6">
+        <img src="../static/images/pho6.jpg">
+      </div>
+      </div>
+
+</div> <!--lib div-->
+
+<div class="con">
+  <h3>Contact Information</h3>
+  <h5>Lorem Ipsum has been the industry's standard<br>dummy text ever since the 1500s, when an<br>unknown printer took a galley of type and<br>scrambled it to make a type specimen book.</h5>
+<p>Phone<br> 123-456-7890</p>
+<span>E-mail<br>dealership@mail.com</span>
+</div> <!--con div-->
+
+
+  
+
+
+
+
+<!--FOOTER 13 starts-->
+<div class="footer13">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-3">
+  <div class="foot33">
+  <h4><span>MOTORS</span> WORDPRESS THEME</h4>
+<p>Fusce interdum ipsum egestas urna amet<br>fringilla, et placerat ex venenatis.Aliquet<br>luctus pharetra. Proin sed fringilla lectus…<br>
+ar sit amet tellus in mollis. Proin nec<br>egestas nibh, eget egestas urna. Phasellus<br>sit amet vehicula nunc. In hac habitasse<br>platea dictumst.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+  <div class="foot34">
+  <h4>PHOTO GALLERY</h4>
+  <div class="fo21">
+  <div class="fo22">
+  <img src="../static/images/nissan_altima_3.jpeg">
+  </div>
+  <div class="fo23">
+  <img src="../static/images/35.jpg">
+  </div>
+  <div class="fo24">
+  <img src="../static/images/blue.jpg">
+  </div>
+  <div class="fo25">
+  <img src="../static/images/red.jpg">
+  </div>
+  </div>          
+  </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="foot35">
+      <h4>LATEST BLOG POSTS</h4>
+      <p>The Tesla Model S isn’t the first truly<br>autonomous car on the road...</p>
+      <h5>NO COMMENTS</h5>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="foot36">
+      <h4>SOCIAL NETWORK</h4>
+      <div class="social5">
+        <div class="face5">
+          <img src="../static/images/icons8-facebook-48.png">
+        </div>
+        <div class="twit5">
+          <img src="../static/images/icons8-twitter-48.png">
+        </div>
+        <div class="insta5">
+          <img src="../static/images/icons8-instagram-50.png">
+        </div>
+        <div class="lin5">
+          <img src="../static/images/icons8-linkedin-30.png">
+        </div>
+    </div>          
+  
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+
+
+  <div class="footer14">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="foot37">
+            <h2>SUBSCRIBE</h2>
+            <div class="input-group">
+              <input type="text"  class="form-control" placeholder="Enter your email...">
+              <span class="input-group-text"><img src="../static/images/wifi.png"></span>
+              <p>Get latest updates and offers.</p>
+            </div>        
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot38">
+            <h4>SALES HOUR</h4>
+            <p>Monday – Friday: 09:00AM – 09:00PM<br>
+              Saturday: 09:00AM – 07:00PM<br>
+              Sunday: Closed
+              </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot39">
+            <h4>SERVICE HOURS</h4>
+           <p>Monday – Friday: 09:00AM – 09:00PM<br>
+            Saturday: 09:00AM – 07:00PM<br>
+            Sunday: Closed</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="foot40">
+            <h4>PARTS HOURS</h4>
+            <p>Monday – Friday: 09:00AM – 09:00PM<br>
+              Saturday: 09:00AM – 07:00PM<br>
+              Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer15">
+    <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes.</p>
+    <div class="lastpho5">
+      <a href="https://www.facebook.com/">
+        <img class="fa5" src="../static/images/icons8-facebook-48.png"></a>
+      <a href="https://twitter.com/">
+        <img class="twi5" src="../static/images/icons8-twitter-48.png"></a>
+      <a href="https://www.instagram.com/">
+        <img class="ins5" src="../static/images/icons8-instagram-50.png"></a>
+      <a href="https://www.linkedin.com/">
+        <img class="li5" src="../static/images/icons8-linkedin-30.png"></a>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+<div class="container">
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert-{{ message.tags }} alert">
+      {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js;
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+</body>
+</html>
+
+      
